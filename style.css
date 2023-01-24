@@ -3,10 +3,80 @@
     --background2: #252526;
     --background3: #333333;
     --accent1: #007acc;
-    --accent2: #89a7a7;
+    --accent2: #00568f;
 }
 
 body {
     background-color: var(--background1);
+
+}
+
+#main {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: stretch;
+    height: 99vh;
+}
+
+#left {
+    background-color: var(--background3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 15vw;
+}
+
+#left>a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--accent1);
+    color: white;
+    width: 70%;
+    text-align: center;
+    border-radius: 25px;
+    margin: 10px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+#left>a:hover {
+    background-color: var(--accent2);
+    width: 80%;
+}
+
+#right {
+    background-color: yellow;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#center {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+#homephoto {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 500px;
+}
+
+#centertext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
 
 }
