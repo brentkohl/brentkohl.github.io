@@ -28,7 +28,7 @@ body {
     align-items: center;
     left: 0px;
     top: 0px;
-    width: 15vw;
+    width: 10vw;
 }
 
 #left>a {
@@ -51,7 +51,7 @@ body {
 }
 
 #right {
-    background-color: yellow;
+    background-color: var(--background1);
     display: flex;
     width: 100%;
     justify-content: center;
@@ -77,6 +77,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 60%;
+    width: 40%;
+    justify-content: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 7%;
+
+}
+
+#leftlogo {
+    padding: 10%;
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
 
 }
