@@ -8,7 +8,7 @@
 
 body {
     background-color: var(--background1);
-
+    overflow: hidden;
 }
 
 #main {
@@ -29,6 +29,7 @@ body {
     left: 0px;
     top: 0px;
     width: 10vw;
+    z-index: 1;
 }
 
 #left>a {
@@ -36,7 +37,6 @@ body {
     text-decoration: none;
     background-color: var(--accent1);
     color: white;
-    width: 70%;
     text-align: center;
     border-radius: 25px;
     margin: 10px 0;
@@ -45,10 +45,18 @@ body {
     font-size: 1em;
 }
 
-#left>a:hover {
-    background-color: var(--accent2);
-    width: 80%;
+#top-bar {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--background3);
+    height: 3vh;
+    position: absolute;
+    margin: 8px;
+    z-index: 0;
 }
+
+
 
 #right {
     background-color: var(--background1);
@@ -58,7 +66,7 @@ body {
 }
 
 #center {
-    width: 40%;
+    width: 35%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -71,6 +79,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 500px;
+    border: 5px var(--background3) solid;
 }
 
 #centertext {
@@ -85,6 +94,18 @@ body {
 
 }
 
+#name {
+    font-size: 7em;
+}
+
+.non-name {
+    opacity: 0.7;
+}
+
+.centertext-item {
+    margin: 5px;
+}
+
 #leftlogo {
     padding: 10%;
 }
@@ -95,4 +116,20 @@ body {
     height: auto;
     border-radius: 25px;
 
+}
+
+.non-active {
+    opacity: 0.6;
+    width: 70%;
+}
+
+.non-active:hover {
+    /* background-color: var(--accent2); */
+    width: 80%;
+    opacity: 1;
+}
+
+.active {
+    width: 80%;
+    opacity: 1;
 }
