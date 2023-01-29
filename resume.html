@@ -7,12 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Website</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body onload="setup()">
-
+<body>
     <div id="main">
         <div id="left">
             <div id="leftlogo">
@@ -23,26 +26,133 @@
             <a class="nav-item non-active" href="contact.html">Contact</a>
         </div>
         <div id="right">
-            <div id="center">
-                <img id="homephoto" src="coffeeshop.jpg" width="5472" height="3648" alt="">
-            </div>
-            <div id="centertext">
-                <h1 class="centertext-item" id="name">Brent Kohl</h1>
-                <h2 class="centertext-item non-name" id="school">University of Massachussets, Amherst</h2>
-                <p class="centertext-item non-name" id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Deserunt, quisquam. Tenetur
-                    aliquam, illum
-                    quisquam perspiciatis voluptates saepe mollitia hic adipisci ex est molestiae natus cumque
-                    perferendis
-                    aliquid maxime. Hic eius dolorem corrupti quibusdam nobis dolor itaque repellat a. Architecto
-                    exercitationem aspernatur ea quibusdam libero molestias rem repudiandae enim delectus adipisci.
-                </p>
-            </div>
+            <div id="top-bar">
 
+            </div>
+            <div id="resume">
+
+                <ul class="tree">
+                    <summary id="name">Resume</summary>
+                    <li>
+                        <summary class="name2" id="career-objective">Career Objective</summary>
+                        <ul>
+                            <li>Pursue a career that will leverage my passion for computer science and
+                                cybersecurity.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <summary class="name2" id="education">Education</summary>
+                        <ul>
+                            <li id="name3">University of Massachusetts, Amherst December 2022</li>
+                            <ul>
+                                <li>Bachelor of Science in Computer Science</li>
+                                <ul>
+                                    <li>Relevant Coursework: Computer and Network Security, Software Entrepreneurship,
+                                        Internet Law and Policy, Data Visualization and Exploration</li>
+                                    <li>Awards: UMass Chancellor’s Award, Sigma Phi Epsilon Balanced Man Scholarship
+                                    </li>
+                                </ul>
+
+                            </ul>
+                            <li id="name3">Rochester Institute of Technology September 2014 - June 2017</li>
+                            <ul>
+                                <li>Project Lead the Way</li>
+                                <ul>
+                                    <li>Achieved college credit in high school from classes in Design and Drawing for
+                                        Production, Principles of Engineering, Civil Engineering and Architecture</li>
+                                    <li>Completed two capstone design projects; presented one to the project architects
+                                        of our high school parking lot rebuild, which resulted in some design elements
+                                        being incorporated into the new parking lot design.</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <summary class="name2" id="activites">Activites</summary>
+                        <ul>
+                            <li id="name3">UMass Cybersecurity Club September 2019 - December 2022</li>
+                            <ul>
+                                <li>Member</li>
+                                <ul>
+                                    <li>Participated in multiple Capture the Flag events and attended lectures about
+                                        different aspects of cybersecurity.</li>
+                                </ul>
+                            </ul>
+                            <li id="name3">ThetaChi Fraternity Fall 2017 - May 2022</li>
+                            <ul>
+                                <li>Tech Chair, January 2019 - December 2019</li>
+                                <ul>
+                                    <li>Set up a new small business network for the fraternity house, tested and ensured
+                                        it was working daily within budget</li>
+                                    <li>Updated and maintained the fraternity website</li>
+                                </ul>
+                                <li>For the Kids Fundraiser, Fall 2017 - Spring 2020</li>
+                                <ul>
+                                    <li>Solicited donations each semester for kids in need of medical care; participated
+                                        in the most successful fundraising effort with work on benefit concerts in Fall
+                                        2018 and Spring 2019.</li>
+                                </ul>
+                            </ul>
+                            <li id="name3">Science Olympiad September 2015 - June 2017</li>
+                            <ul>
+                                <li>Vice-President of Build, September 2016 - June 2017</li>
+                                <ul>
+                                    <li>Created and corrected practice exams, selected teams, and led the build team to
+                                        the state competition.</li>
+                                    <li>Designed, built and programmed an electric car, hovercraft, and robot arm.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <summary class="name2" id="career-experience">Career Experience</summary>
+                        <ul>
+                            <li id="name3">Community Connector, LLC June 2021 - August 2021</li>
+                            <ul>
+                                <li>Full Stack Developer</li>
+                                <ul>
+                                    <li>Undertook learning a new programming language for a startup company.</li>
+                                    <li>Architect of the application, designing the front end as well as building the
+                                        backend and database.</li>
+                                </ul>
+                            </ul>
+                            <li id="name3">Dutchess Recreational Vehicles April 2020 - August 2020</li>
+                            <ul>
+                                <li>Pick and Packer</li>
+                                <ul>
+                                    <li>Checked, packed, and prepared shipping orders; ensured stock rotation and
+                                        analyzed records of shipments.</li>
+                                    <li>Evaluated the DHCP server, security, and routing to determine possible
+                                        improvements in the current system.</li>
+                                </ul>
+                            </ul>
+                            <li id="name3">Creative Gardens June 2018 – August 2018</li>
+                            <ul>
+                                <li>Gardener</li>
+                                <ul>
+                                    <li>Maintained landscaping at high-end properties.</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <summary class="name2" id="additional-skills">Additional Skills</summary>
+                        <ul>
+                            <li id="name3">Programming</li>
+                            <ul>
+                                <li>Experience with Java, Javascript, HTML, CSS, Linux, Python, Ruby Ruby on Rails</li>
+                            </ul>
+                            <li id="name3">Other Experience</li>
+                            <ul>
+                                <li>Proficient in Autodesk Inventor, multiple IDEs, and Adobe Photoshop</li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-
 </body>
 
 <script src="script.js"></script>

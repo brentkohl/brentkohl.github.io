@@ -8,16 +8,21 @@
 
 body {
     background-color: var(--background1);
-    overflow: hidden;
+    overflow-y: visible;
+    overflow-x: hidden;
+    /* font-family: 'Major Mono Display', monospace; */
+    font-family: 'JetBrains Mono', monospace;
+    user-select: none;
+    margin: 0;
 }
 
 #main {
-    background-color: green;
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: stretch;
-    height: 99vh;
+    min-height: 99vh;
+    max-height: fit-content;
 }
 
 #left {
@@ -40,7 +45,7 @@ body {
     text-align: center;
     border-radius: 25px;
     margin: 10px 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     transition: 0.3s;
     font-size: 1em;
 }
@@ -52,7 +57,7 @@ body {
     background-color: var(--background3);
     height: 3vh;
     position: absolute;
-    margin: 8px;
+    margin: 0px;
     z-index: 0;
 }
 
@@ -86,16 +91,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 40%;
+    width: 50%;
     justify-content: center;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 7%;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    padding: 1%;
+    /* height: max-content; */
 
 }
 
 #name {
     font-size: 7em;
+    /* word-spacing: 1em; */
+}
+
+.name2 {
+    font-size: 2em;
+    color: orange;
+}
+
+#name3 {
+    font-size: 1.25em;
+    color: var(--accent1);
 }
 
 .non-name {
@@ -132,4 +149,32 @@ body {
 .active {
     width: 80%;
     opacity: 1;
+}
+
+#school {
+    margin-left: .65em;
+}
+
+#email {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    margin: .35em;
+}
+
+.ctext {
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    justify-content: center;
+    color: white;
+    padding: 1%;
+    height: max-content;
+
 }
