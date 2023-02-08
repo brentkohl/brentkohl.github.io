@@ -103,6 +103,7 @@ body {
 #name {
     font-size: 7em;
     /* word-spacing: 1em; */
+    color: white;
 }
 
 .name2 {
@@ -177,4 +178,24 @@ body {
     padding: 1%;
     height: max-content;
 
+}
+
+#center-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    width: 75%;
+    padding: 50px;
+}
+
+#project-name {
+    color: var(--accent1);
+    text-decoration: none;
+    font-size: 2em;
+
+}
+
+#project-description {
+    color: orange;
 }

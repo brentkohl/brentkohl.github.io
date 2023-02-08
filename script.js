@@ -15,7 +15,7 @@ let nameList = _name.split("");
 let schoolList = _school.split("");
 let aboutList = _about.split("");
 
-let fullTime = 300;
+let fullTime = 200;
 let currentTime = 0;
 
 let revisedNameList = [];
@@ -110,7 +110,7 @@ function update() {
     currentTime++;
     console.log(currentTime);
     if (continueUpdate) {
-        setTimeout(update, 1000 / 60);
+        setTimeout(update, 600 / 60);
     }
 
 
